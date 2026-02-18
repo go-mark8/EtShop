@@ -15,8 +15,6 @@
     
     # Java Development Kit (Latest LTS)
     pkgs.jdk21                   # Java 21 LTS - latest recommended
-    pkgs.jdk17                   # Java 17 LTS - fallback
-    pkgs.jdk11                   # Java 11 LTS - legacy support
     
     # Build Systems & Package Managers
     pkgs.gradle_8                # Latest Gradle 8.x
@@ -32,7 +30,6 @@
     
     # Node.js & Package Managers
     pkgs.nodejs_22               # Node.js 22 LTS
-    pkgs.nodejs_20               # Node.js 20 LTS (fallback)
     pkgs.yarn                    # Yarn package manager
     pkgs.pnpm                    # Fast package manager
     pkgs.nodePackages.npm        # Latest npm
@@ -325,7 +322,7 @@
     # --------------------------------
     # PATH EXTENSIONS
     # --------------------------------
-    PATH = [
+    PATH = builtins.concatStringsSep ":" [
       # User binaries
       "$HOME/.local/bin"
       "$HOME/.npm-global/bin"
