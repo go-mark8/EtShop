@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "vscjava.vscode-java-pack",
+    "vscjava.vscode-gradle",
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "toba.vsfire",
+    "eamodio.gitlens",
+    "pkief.material-icon-theme"
+  ]
+}
