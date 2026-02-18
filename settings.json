@@ -1,0 +1,29 @@
+{
+  "files.exclude": {
+    "**/.gradle": true,
+    "**/build": true,
+    "**/.idea": true,
+    "**/*.iml": true,
+    "**/local.properties": true,
+    "**/.firebase": true,
+    "**/node_modules": true,
+    "**/.idx/cache": true,
+    "**/.idx/tmp": true
+  },
+  "files.watcherExclude": {
+    "**/.gradle/**": true,
+    "**/build/**": true,
+    "**/node_modules/**": true,
+    "**/.firebase/**": true,
+    "**/.idx/cache/**": true,
+    "**/.idx/tmp/**": true,
+    "**/functions/lib/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/build": true,
+    "**/.gradle": true,
+    "**/functions/lib": true,
+    "**/.idx/cache": true
+  }
+}
